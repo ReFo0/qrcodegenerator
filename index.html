@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+<body>
+    <h1>QR Code Generator</h1>
+    <form id="qrForm">
+        <label for="redirectUrl">🌐 Enter the redirect URL: </label>
+        <input type="text" id="redirectUrl" name="redirectUrl" required>    
+        <button type="button" onclick="generateQR()">🔑 Generate QR Code</button>
+    </form>
+
+    <div id="qrCodeContainer"></div>
+
+    <div class="footer">
+        <p>💖 Made by ReFo</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
